@@ -14,9 +14,21 @@
         <script src="js/lib/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
+        <div id="container"></div>
         <script src="js/lib/jquery-min.js"></script>
         <script src="js/lib/underscore-min.js"></script>
         <script src="js/lib/backbone-min.js"></script>
+
+        <script id="newVehicleTemplate" type="text/template">
+            <input class="registration-number" type="text"></input>
+            <button class="addVehicle">Add</button>
+        </script>
+        
+        <script id="vehicleTemplate" type="text/template">
+            <%= registrationNumber %>
+            <button class="deleteVehicle">Delete</button>
+        </script>
+
         <script src="js/main.js"></script>
     </body>
 </html>
